@@ -31,7 +31,6 @@
     --header-height: 250px;
     --header-nav-height: 62px;
 } 
-/* Montserrat */
 
 
 /* 
@@ -61,25 +60,89 @@ section {
     margin-bottom: 4rem;
 }
 
-
-.header {
-    width: 100%;
-    background-color: var(--main-blue);
-    min-height: calc(
-        var(--header-height) + 
-        var(--header-nav-height));
-    color: var(--text-white);
-
-}
-
-
-
 /* 
     ===================
 
     ----- classes ----- 
 
     ===================
+*/
+
+/* 
+    ----- Header ----- 
+*/
+
+
+.header {
+    width: 100%;
+    overflow: hidden;
+    min-height: calc(
+        var(--header-height) + 
+        var(--header-nav-height));
+    color: var(--text-white);
+}
+
+.navigation {
+    background-color: var(--main-blue);
+    padding: 1.5rem 2.5rem;
+}
+
+.nav--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company--title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    border-bottom: 1rem;
+}
+
+.company--subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.header--bottom-container {
+    background-image: url('../resources/img/home-img.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    height: var(--header-height);
+}
+
+
+.bottom--text {
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
+    background-color: var(--main-blue);
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 65px 10px 24px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+
+/* 
+    ----- Main ----- 
 */
 
 
