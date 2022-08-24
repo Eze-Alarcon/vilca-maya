@@ -1,0 +1,120 @@
+/* 
+    Structure:
+
+    * Root
+
+    * generic styles
+
+    * Classes
+
+*/
+
+/* 
+    ================
+
+    ----- Root ----- 
+
+    ================
+*/
+
+
+:root {
+    /* ----- Colors ----- */
+    --main-blue: hsla(218, 57%, 27%, 1);
+    --secondary-blue: hsla(216, 67%, 15%, 1);
+
+
+    --text-white: hsla(0, 0%, 100%, 1);
+
+    --font: 'Montserrat', sans-serif;
+
+    --header-height: 250px;
+    --header-nav-height: 62px;
+} 
+/* Montserrat */
+
+
+/* 
+    ==========================
+
+    ----- Generic styles ----- 
+
+    ==========================
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font);
+}
+
+
+main {
+    margin: 6.5rem auto 7rem;
+    padding: 0 2.5rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+
+.header {
+    width: 100%;
+    background-color: var(--main-blue);
+    min-height: calc(
+        var(--header-height) + 
+        var(--header-nav-height));
+    color: var(--text-white);
+
+}
+
+
+
+/* 
+    ===================
+
+    ----- classes ----- 
+
+    ===================
+*/
+
+
+.container {
+    width: 25rem;
+    height: 5rem;
+    background-color: var(--main-blue);
+    border-radius: 2.5rem;
+    display: grid;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding-left: 4.2rem;
+}
+
+.titles {
+    color: var(--text-white);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text ~ ul {
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
