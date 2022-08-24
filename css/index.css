@@ -190,6 +190,14 @@ ul li {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 744px) {
+    ul[role='list'] {
+        list-style: disc;
+        padding-left: 3rem;
+    }
+    
+}
+
 
 
 
