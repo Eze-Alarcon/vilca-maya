@@ -177,11 +177,6 @@ ul {
     margin: 0;
 }
 
-ul li {
-    margin-bottom: 1rem;
-}
-
-
 
 /* 
     ----- Footer ----- 
@@ -238,7 +233,9 @@ ul li {
     padding: 0;
 }
 
+
 .footer li {
+    margin-bottom: 1rem;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.2rem;
