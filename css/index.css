@@ -56,6 +56,13 @@ main {
     padding: 0 2.5rem;
 }
 
+@media (min-width: 744px) {
+    main {
+        padding: 0 6rem;
+    }
+    
+}
+
 section {
     margin-bottom: 4rem;
 }
@@ -147,6 +154,15 @@ section {
 
 }
 
+@media (min-width: 744px) {
+    .bottom--text {
+        height: 12.5rem;
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+
+    }
+}
+
 
 
 /* 
@@ -191,7 +207,7 @@ ul li {
 }
 
 @media (min-width: 744px) {
-    ul[role='list'] {
+    main ul[role='list'] {
         list-style: disc;
         padding-left: 3rem;
     }
