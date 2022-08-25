@@ -79,7 +79,7 @@ section {
 
 .header {
     --header-height: 250px;
-    --header-nav-height: 62px;
+    --header-nav-height: 6rem;
 
     width: 100%;
     overflow: hidden;
@@ -92,12 +92,12 @@ section {
 
 .navigation {
     background-color: var(--main-blue);
+    display: flex;
+    height: 6rem;
     padding: 1.5rem 2.5rem;
-}
-
-.nav--container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .brand--title {
@@ -141,26 +141,81 @@ section {
     right: 0;
     display: flex;
     align-items: flex-end;
-    padding: 0 65px 10px 24px;
 }
 
 .background--text {
-    font-size: 2rem;
     font-style: italic;
     font-weight: 700;
-    line-height: 2.4rem;
-    max-width: 80%;
+}
+
+/* 
+
+    Note:
+        Home has a few different arrangements. 
+        
+        To solve this issue, a "data-page" attribute has been added
+        to all html to be able to add specific styles to each page
+        and keep the header and footer styles in this file.
+
+*/
+
+
+/* before 743px */
+
+@media (max-width: 743px) {
+    .long {
+        display: none;
+    }
+
+
+
+
+
+    [data-page="home"] .background--text {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        max-width: 27rem;
+    }
+
+    [data-page="home"] .container--background {
+        padding: 0 65px 10px 25px;
+    }
+
+    [data-page="service"] .container--background,
+    [data-page="contact"] .container--background {
+        padding: 0 65px 26px 25px;
+    }
+
+    [data-page="service"] .background--text,
+    [data-page="contact"] .background--text {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
 }
 
 
-@media (min-width: 744px) {
 
-    .logo {
-        margin-right: 2.3rem;
+/* after 744px */
+
+
+
+@media (min-width: 744px) {
+    .navigation {
+        height: 8rem;
+        padding: 1.5rem 6rem;
+    }
+
+    .short {
+        display: none;
+    }
+
+    .long {
+        display: block;
     }
 
     .brand {
         margin-right: auto;
+        padding-left: 2.3rem;
     }
 
     .container--background {
@@ -168,11 +223,25 @@ section {
     }
 
 
-    .background--text {
+
+
+    [data-page="home"] .container--background,
+    [data-page="service"] .container--background,
+    [data-page="contact"] .container--background {
+        padding: 0 65px 14px 60px;
+    }
+
+    [data-page="home"] .background--text,
+    [data-page="service"] .background--text,
+    [data-page="contact"] .background--text {
         font-size: 2.8rem;
         line-height: 3.4rem;
+    }
+
+    [data-page="home"] .background--text {
         width: 37.8rem;
     }
+
 }
 
 
