@@ -21,17 +21,25 @@
 <body>
     <header class="header" data-page="contact">
         
-        <nav class="navigation">
-            <img class="logo" src="../resources/svg/logo-small.svg" alt="">
-            
-            <div class="brand">
+		<nav class="navigation">
+			<img class="logo" src="../resources/svg/logo-small.svg" alt="" />
+			<div class="brand">
+				<a href="../index.html">
                 <h1 class="brand--title">VILCA & MAYA</h1>
-                <p class="brand--subtitle">Estudio contable y administrativo</p>
-            </div>
-
-            <img src="../resources/svg/menu-burger.svg" alt="">
-        </nav>
-
+                </a>  
+                <a href="../index.html">
+				<p class="brand--subtitle">Estudio contable y administrativo</p>
+                </a>
+			</div>
+			<div class="div--menu-burguer-container" id="menu-containenr">
+				<img id="button-menu" src="../resources/svg/menu-burger.svg" alt="" />
+				<div class="div-menu-burguer" id="burguer-menu" style="display : none">
+					<a href="../index.html">home</a>
+					<a href="../pages/service.html">servicios</a>
+					<a href="../pages/contact.html">contacto</a>
+				</div>
+			</div>
+		</nav>
 
 
 
@@ -146,5 +154,7 @@
             </div>
         </div>
     </footer>
+    	<div id="page-mask" style="display : none"></div>
+	    <script src="../scripts/index.js"></script>
 </body>
 </html>

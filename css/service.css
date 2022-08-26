@@ -15,14 +15,12 @@
     ================
 */
 
-
 :root {
-    /* ----- Colors ----- */
-    --main-blue: hsla(218, 57%, 27%, 1);
-    --secondary-blue: hsla(216, 67%, 15%, 1);
-    --text-white: hsla(0, 0%, 100%, 1);
-} 
-
+  /* ----- Colors ----- */
+  --main-blue: hsla(218, 57%, 27%, 1);
+  --secondary-blue: hsla(216, 67%, 15%, 1);
+  --text-white: hsla(0, 0%, 100%, 1);
+}
 
 /* 
     ================
@@ -32,34 +30,32 @@
     ================
 */
 
-
 .container {
-    margin-bottom: 2.5rem;
-    padding-left: 4.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-left: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .titles {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.4rem;
-    letter-spacing: 0em;
-    text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .text {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    letter-spacing: 0em;
-    text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 ul {
-    padding: 0 0 0 2.4rem;
-    margin: 0;
+  padding: 0 0 0 2.4rem;
+  margin: 0;
 }
-
