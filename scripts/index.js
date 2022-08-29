@@ -8,15 +8,21 @@ let menuOpen = false;
 
 let click = 0;
 
-function toggle(element) {
-  let display = element.style.display;
-  element.style.display = "flex";
+function toggleVisibility(element) {
+  element.style.visibility = "visible";
+  menuOpen = true;
+}
+
+function toggleOpacity(element) {
+  element.style.opacity = "1";
   menuOpen = true;
 }
 
 buttonMenu.addEventListener("click", function openMenu() {
-  toggle(backgroundBlur);
-  toggle(burguerMenu);
+  toggleVisibility(backgroundBlur);
+  toggleVisibility(burguerMenu);
+  toggleOpacity(backgroundBlur);
+  toggleOpacity(burguerMenu);
   closeMenu();
 });
 
@@ -25,8 +31,10 @@ let eventHander = function (event) {
   if (!withinBoundaries) {
     click++;
     if (click > 1) {
-      backgroundBlur.style.display = "none";
-      burguerMenu.style.display = "none";
+      backgroundBlur.style.visibility = "hidden";
+      burguerMenu.style.visibility = "hidden";
+      backgroundBlur.style.opacity = "0";
+      burguerMenu.style.opacity = "0";
       click = 0;
     }
   }

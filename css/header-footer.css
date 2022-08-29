@@ -291,7 +291,8 @@ section {
 
 .div-menu-burguer {
   position: absolute;
-  display: none; /*flex*/
+  display: flex;
+  visibility: hidden;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -305,19 +306,20 @@ section {
   max-height: var(--header-height);
   width: 60%;
   padding: 3rem 1rem;
-  transition: all 0.5s ease-in-out;
+  transition: visibility 0s, opacity 0.5s, ease-in-out;
 }
 
 #page-mask {
   z-index: 50;
-  display: none;
+  visibility: hidden;
+  display: flex;
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  transition: all 0.5s ease-in-out;
+  transition: visibility 0.5s, opacity 0.5s, ease-in-out;
 }
 
 .div-menu-burguer > a {

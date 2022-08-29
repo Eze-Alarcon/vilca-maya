@@ -85,3 +85,7 @@
   letter-spacing: 0em;
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+}

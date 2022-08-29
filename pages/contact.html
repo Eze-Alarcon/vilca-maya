@@ -33,7 +33,7 @@
 			</div>
 			<div class="div--menu-burguer-container" id="menu-containenr">
 				<img id="button-menu" src="../resources/svg/menu-burger.svg" alt="" />
-				<div class="div-menu-burguer" id="burguer-menu" style="display : none">
+				<div class="div-menu-burguer" id="burguer-menu" style="visibility:hidden; opacity: 0; transition:all 300ms ease-in-out;">
 					<a href="../index.html">home</a>
 					<a href="../pages/service.html">servicios</a>
 					<a href="../pages/contact.html">contacto</a>
@@ -67,9 +67,7 @@
 
 
     <main>
-
-
-        <form class="form" action="">
+        <form class="form" action="https://formsubmit.co/estudiovv2312@gmail.com" method="POST">
 
             <label for="get-name">Nombre:</label>
             <input 
@@ -106,9 +104,10 @@
                 class="input textarea"
                 required
             ></textarea>
+            <button type="submit" class="button">Enviar</button>
 
-
-            <button type="button" class="button">Enviar</button>
+            <input type="hidden" name="_next" value="../pages/form-sended">
+            <input type="hidden" name="_captcha" value="false">
         </form>
 
 
@@ -154,7 +153,7 @@
             </div>
         </div>
     </footer>
-    	<div id="page-mask" style="display : none"></div>
+    	<div id="page-mask" style="visibility:hidden; opacity: 0; transition:all 300ms ease-in-out;"></div>
 	    <script src="../scripts/index.js"></script>
 </body>
 </html>

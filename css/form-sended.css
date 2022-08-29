@@ -1,0 +1,103 @@
+/* 
+    ================
+
+    ----- Root ----- 
+
+    ================
+*/
+
+:root {
+  /* ----- Colors ----- */
+  --main-blue: hsla(218, 57%, 27%, 1);
+  --secondary-blue: hsla(216, 67%, 15%, 1);
+  --text-white: hsla(0, 0%, 100%, 1);
+
+  /* ----- Fonts ----- */
+  --font: "Montserrat", sans-serif;
+  --letter-spacing: 0em;
+}
+
+/* 
+    ==========================
+
+    ----- Generic styles ----- 
+
+    ==========================
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: var(--font);
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--main-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+    ==========================
+
+    ----- Main ----- 
+
+    ==========================
+*/
+
+.div--main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #ffff;
+  padding: 2.7rem 0 0 0;
+  height: 35vh;
+  width: 90vw;
+  position: absolute;
+  border-radius: 3rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: scroll;
+}
+
+.div--container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.title--thanks {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+}
+
+p {
+  font: var(--font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 3rem;
+  text-align: left;
+  font-style: medium;
+  line-height: 1.8rem;
+}
+
+.div--button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+.title--close {
+  display: block;
+  font: var(--font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #3141b4;
+  margin: 0 3rem 2rem 0;
+}
