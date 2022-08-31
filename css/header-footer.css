@@ -313,8 +313,6 @@ section {
   .long {
     display: block;
   }
-
-
 }
 
 
@@ -344,6 +342,9 @@ section {
     display: inline;
   }
 
+
+  /* archivos de main */
+
   main {
     display: flex;
     flex-direction: row;
@@ -359,6 +360,8 @@ section {
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
+
+  /* fin archivos de main */
 
   .brand--subtitle {
     font-size: 1.6rem;
@@ -400,6 +403,9 @@ section {
     transition: all 200ms ease-in-out;
   }
 
+
+  /* archivos del main */
+
   section {
     width: 50rem;
   }
@@ -414,6 +420,7 @@ section {
   }
 
   
+  /* fin archivos del main */
 
   
 
@@ -475,14 +482,25 @@ section {
     );
   }
 
+  /* archivos del main */
+
   #only-desktop {
     display: block;
   }
+
+  /* fin archivos del main */
 }
 
 
 
+/* 
+    ===========================
 
+    ---------- Media ----------
+    ----- Desktop (1440px) ----
+    
+    ===========================
+*/
 
 
 
@@ -605,9 +623,14 @@ section {
 */
 
 @media only screen and (min-width: 744px) {
+
+  /* archivos del main */
+
   main {
     padding: 0 6rem;
   }
+  
+  /* fin archivos del main */
 
   .footer {
     height: 39rem;
@@ -694,8 +717,14 @@ section {
 
 
 
+/* 
+    ==================
 
-
+    ------ Media -----
+    ----- Desktop ----
+    
+    ==================
+*/
 
 
 
@@ -706,32 +735,5 @@ section {
 
   .footer--container {
     clip-path: polygon(0 25.5%, 100% 0, 100% 100%, 0 100%);
-    /* padding: 3rem 0 3rem; */
   }
-
-  /* .social--media {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .h3--contacto {
-    display: none;
-  }
-
-  .div--ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .data-mobile {
-    display: none;
-  } */
-
-  /* footer li {
-    list-style: none;
-    font-weight: 100;
-    font-size: 1.8rem;
-    line-height: 0.5rem;
-    text-align: left;
-  } */
 }
