@@ -63,6 +63,11 @@
   align-items: center;
 }
 
+.brand-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .brand--title {
   font-size: 1.8rem;
   font-weight: 500;
@@ -91,10 +96,6 @@
   height: auto;
 }
 
-.desktop--logo {
-  display: none;
-}
-
 .container--background {
   clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
   background-color: var(--main-blue);
@@ -115,6 +116,11 @@
 }
 
 .shadow {
+  display: none;
+}
+
+.desktop--logo {
+  position: absolute;
   display: none;
 }
 
@@ -342,11 +348,6 @@
     font-weight: 800;
     color: #ffff;
     transition: all 200ms ease-in-out;
-  }
-
-  .brand {
-    margin-right: auto;
-    padding-left: 2.3rem;
   }
 
   .container--background {

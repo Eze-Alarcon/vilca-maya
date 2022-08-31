@@ -113,7 +113,6 @@ a {
 
   .form .input--text {
     min-height: 6.2rem;
-    min-width: 85.6rem;
     border-radius: 2rem;
     padding-left: 27px;
     margin-bottom: 6.6rem;
@@ -130,7 +129,7 @@ a {
   }
 
   .form .textarea {
-    min-width: 32rem;
+    min-width: 85rem;
     min-height: 17rem;
     border-radius: 2rem;
     margin-bottom: 5rem;

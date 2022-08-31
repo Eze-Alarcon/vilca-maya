@@ -56,6 +56,10 @@ section {
   margin-bottom: 4rem;
 }
 
+nav .logo {
+  max-width: var(--header-nav-height);
+  padding-right: 2rem;
+}
 /* 
     ================
 
@@ -130,7 +134,6 @@ ul li {
   }
 
   .titles {
-    font-size: 2rem;
     line-height: 2.6rem;
   }
 
