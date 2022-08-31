@@ -30,33 +30,6 @@
 }
 
 /* 
-    ==========================
-
-    ----- Generic styles ----- 
-
-    ==========================
-*/
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: var(--font);
-  letter-spacing: var(--letter-spacing);
-}
-
-main {
-  margin: 6.5rem auto 7rem;
-  padding: 0 2.5rem;
-}
-
-section {
-  margin-bottom: 4rem;
-}
-
-/* 
     ==================
 
     ----- Header -----
@@ -142,10 +115,6 @@ section {
 }
 
 .shadow {
-  display: none;
-}
-
-#only-desktop {
   display: none;
 }
 
@@ -242,7 +211,7 @@ section {
   }
 
   [data-page="home"] .background--text {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 2.4rem;
     max-width: 27rem;
   }
@@ -263,8 +232,6 @@ section {
   }
 }
 
-
-
 /* 
     =================
 
@@ -273,8 +240,6 @@ section {
     
     =================
 */
-
-
 
 @media only screen and (min-width: 744px) {
   .navigation {
@@ -286,7 +251,7 @@ section {
   }
 
   .container--background {
-      height: 12.5rem;
+    height: 12.5rem;
   }
 
   [data-page="service"] .container--background,
@@ -300,11 +265,10 @@ section {
     font-size: 2.8rem;
     line-height: 3.4rem;
   }
-  
+
   [data-page="home"] .background--text {
     max-width: 37rem;
   }
-
 
   .short {
     display: none;
@@ -314,8 +278,6 @@ section {
     display: block;
   }
 }
-
-
 
 /* 
     ==================
@@ -341,27 +303,6 @@ section {
   picture {
     display: inline;
   }
-
-
-  /* archivos de main */
-
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .brand--title {
-    font-weight: 500;
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-  }
-
-  /* fin archivos de main */
 
   .brand--subtitle {
     font-size: 1.6rem;
@@ -403,27 +344,6 @@ section {
     transition: all 200ms ease-in-out;
   }
 
-
-  /* archivos del main */
-
-  section {
-    width: 50rem;
-  }
-  .section--objetivos {
-    display: none;
-  }
-
-  .text {
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 2.9rem;
-  }
-
-  
-  /* fin archivos del main */
-
-  
-
   .brand {
     margin-right: auto;
     padding-left: 2.3rem;
@@ -432,7 +352,6 @@ section {
   .container--background {
     height: 12.5rem;
   }
-
 
   [data-page="home"] .container--background,
   [data-page="service"] .container--background,
@@ -443,7 +362,7 @@ section {
   [data-page="home"] .background--text,
   [data-page="service"] .background--text,
   [data-page="contact"] .background--text {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     line-height: 4.3rem;
   }
 
@@ -467,7 +386,6 @@ section {
     height: auto;
   }
 
-
   .shadow {
     display: block;
     position: absolute;
@@ -481,17 +399,7 @@ section {
       rgba(250, 251, 253, 0) 100%
     );
   }
-
-  /* archivos del main */
-
-  #only-desktop {
-    display: block;
-  }
-
-  /* fin archivos del main */
 }
-
-
 
 /* 
     ===========================
@@ -502,23 +410,17 @@ section {
     ===========================
 */
 
-
-
 @media only screen and (min-width: 1440px) {
   .navigation {
     padding: 0 9.5rem 0 15rem;
   }
-
 
   [data-page="home"] .container--background,
   [data-page="service"] .container--background,
   [data-page="contact"] .container--background {
     padding-left: 15rem;
   }
-  
 }
-
-
 
 /* 
     ==================
@@ -527,9 +429,6 @@ section {
     
     ==================
 */
-
-
-
 
 .footer {
   height: 52rem;
@@ -623,15 +522,6 @@ section {
 */
 
 @media only screen and (min-width: 744px) {
-
-  /* archivos del main */
-
-  main {
-    padding: 0 6rem;
-  }
-  
-  /* fin archivos del main */
-
   .footer {
     height: 39rem;
   }
@@ -715,8 +605,6 @@ section {
   }
 }
 
-
-
 /* 
     ==================
 
@@ -725,8 +613,6 @@ section {
     
     ==================
 */
-
-
 
 @media only screen and (min-width: 1024px) {
   .background {

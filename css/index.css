@@ -3,8 +3,11 @@
 
     * Root
 
+    * generic styles
+
     * Main
 
+    *Media query
 */
 
 /* 
@@ -20,6 +23,37 @@
   --main-blue: hsla(218, 57%, 27%, 1);
   --secondary-blue: hsla(216, 67%, 15%, 1);
   --text-white: hsla(0, 0%, 100%, 1);
+
+  /* ----- Fonts ----- */
+  --font: "Montserrat", sans-serif;
+  --letter-spacing: 0em;
+}
+
+/* 
+    ==========================
+
+    ----- Generic styles ----- 
+
+    ==========================
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font);
+  letter-spacing: var(--letter-spacing);
+}
+
+main {
+  margin: 6.5rem auto 7rem;
+  padding: 0 2.5rem;
+}
+
+section {
+  margin-bottom: 4rem;
 }
 
 /* 
@@ -74,10 +108,76 @@ ul li {
   margin-bottom: 1rem;
 }
 
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Desktop ----
+    
+    ==================
+*/
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70vw;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .titles {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  section {
+    width: 50rem;
+  }
+
+  .section--objetivos {
+    display: none;
+  }
+
+  section ul li {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.9rem;
+  }
+
+  #only-desktop {
+    display: block;
+  }
+}
+
 @media (min-width: 744px) {
   main ul[role="list"] {
     /* esto sale del reset.css */
     list-style: disc;
     padding-left: 3rem;
+  }
+}
+
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Tablet ----
+    
+    ==================
+*/
+
+@media only screen and (min-width: 744px) {
+  /* archivos del main */
+
+  main {
+    padding: 0 6rem;
   }
 }
