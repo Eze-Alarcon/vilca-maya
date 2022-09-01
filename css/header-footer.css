@@ -523,6 +523,11 @@
 */
 
 @media only screen and (min-width: 744px) {
+  .div-menu-burguer {
+    min-height: calc(var(--header-height) + 5rem);
+    padding: 4.5rem 1rem;
+  }
+
   .footer {
     height: 39rem;
   }
@@ -616,6 +621,9 @@
 */
 
 @media only screen and (min-width: 1024px) {
+  .div-menu-burguer {
+    display: none;
+  }
   .background {
     clip-path: polygon(50% 12.25%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
@@ -624,3 +632,23 @@
     clip-path: polygon(0 25.5%, 100% 0, 100% 100%, 0 100%);
   }
 }
+
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Tablet ----
+    
+    ==================
+*/
+/*
+@media only screen, (min-width: 744px) and (max-width: 1024px) {
+  .brand--title {
+    font-size: 2rem;
+  }
+
+  .brand--subtitle {
+    font-size: 1.4rem;
+  }
+}
+*/

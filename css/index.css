@@ -141,6 +141,14 @@ ul li {
     width: 50rem;
   }
 
+  .section:first-child {
+    margin-right: 10rem;
+  }
+
+  .section:nth-child(3) {
+    margin-left: 10rem;
+  }
+
   .section--objetivos {
     display: none;
   }
@@ -178,9 +186,22 @@ ul li {
 */
 
 @media only screen and (min-width: 744px) {
-  /* archivos del main */
-
   main {
     padding: 0 6rem;
+  }
+
+  .text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  section ul li {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
   }
 }
