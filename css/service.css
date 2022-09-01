@@ -1,22 +1,4 @@
-/* 
-    Structure:
-
-    * Root
-
-    * Main
-
-*/
-
-/* 
-    ================
-
-    ----- Root ----- 
-
-    ================
-*/
-
 :root {
-  /* ----- Colors ----- */
   --main-blue: hsla(218, 57%, 27%, 1);
   --secondary-blue: hsla(216, 67%, 15%, 1);
   --text-white: hsla(0, 0%, 100%, 1);
@@ -61,49 +43,6 @@ ul {
   margin: 0;
 }
 
-/* 
-    ==================
-
-    ----- Media -----
-    ----- Desktop ----
-    
-    ==================
-*/
-
-@media only screen and (min-width: 1024px) {
-  .main--service {
-    display: grid;
-    grid-template-areas:
-      "a b"
-      "c d"
-      "e f";
-  }
-
-  .img--svg {
-    height: 14rem;
-  }
-
-  section {
-    grid-area: 1fr;
-    margin: 0;
-  }
-
-  h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 4.3rem;
-    margin: 3.5rem 0 0 0;
-    padding: 0;
-  }
-
-  .text {
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 2.9rem;
-    margin: 0;
-    padding: 0;
-  }
-}
 
 /* 
     ==================
@@ -126,10 +65,64 @@ ul {
   }
 
   section {
-    margin-top: 7rem;
+    margin: 7rem 0 0 0;
   }
 
   section:last-child {
     margin-bottom: 15rem;
+  }
+}
+
+
+
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Desktop ----
+    
+    ==================
+*/
+
+@media only screen and (min-width: 1024px) {
+
+  main {
+    padding: 0;
+    margin: 0;
+    padding: 0 15rem;
+    width: 100%;
+  }
+
+  .main--service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    column-gap: 100px;
+    
+  }
+
+  .img--svg {
+    height: 14rem;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.3rem;
+    margin: 3.5rem 0 0 0;
+    padding: 0;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    margin: 0;
+    padding: 0;
   }
 }

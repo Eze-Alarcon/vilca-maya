@@ -10,6 +10,8 @@
     * Footer
 */
 
+
+
 /* 
     ================
 
@@ -17,6 +19,8 @@
 
     ================
 */
+
+
 
 :root {
   /* ----- Colors ----- */
@@ -29,6 +33,8 @@
   --letter-spacing: 0em;
 }
 
+
+
 /* 
     ==================
 
@@ -36,6 +42,8 @@
     
     ==================
 */
+
+
 
 .header {
   --header-height: 250px;
@@ -123,6 +131,8 @@
   display: none;
 }
 
+
+
 /* 
     ==================
 
@@ -130,6 +140,8 @@
     
     ==================
 */
+
+
 
 .div--menu-burguer-container-desktop {
   display: none;
@@ -189,6 +201,8 @@
   text-decoration: none;
 }
 
+
+
 /* 
 
     Note:
@@ -201,6 +215,7 @@
 
 */
 
+
 /* 
     ==================
 
@@ -209,6 +224,8 @@
     
     ==================
 */
+
+
 
 @media (max-width: 743px) {
   .long {
@@ -284,6 +301,8 @@
   }
 }
 
+
+
 /* 
     ==================
 
@@ -292,6 +311,8 @@
     
     ==================
 */
+
+
 
 @media only screen and (min-width: 1024px) {
   .navigation {
@@ -405,6 +426,8 @@
   }
 }
 
+
+
 /* 
     ===========================
 
@@ -413,6 +436,8 @@
     
     ===========================
 */
+
+
 
 @media only screen and (min-width: 1440px) {
   .navigation {
@@ -437,6 +462,8 @@
   }
 }
 
+
+
 /* 
     ==================
 
@@ -444,6 +471,8 @@
     
     ==================
 */
+
+
 
 .footer {
   height: 52rem;
@@ -527,6 +556,8 @@
   max-width: 340px;
 }
 
+
+
 /* 
     ==================
 
@@ -535,6 +566,8 @@
     
     ==================
 */
+
+
 
 @media only screen and (min-width: 744px) {
   .div-menu-burguer {
@@ -625,6 +658,8 @@
   }
 }
 
+
+
 /* 
     ==================
 
@@ -633,6 +668,8 @@
     
     ==================
 */
+
+
 
 @media only screen and (min-width: 1024px) {
   .div-menu-burguer {
@@ -646,23 +683,3 @@
     clip-path: polygon(0 25.5%, 100% 0, 100% 100%, 0 100%);
   }
 }
-
-/* 
-    ==================
-
-    ----- Media -----
-    ----- Tablet ----
-    
-    ==================
-*/
-/*
-@media only screen, (min-width: 744px) and (max-width: 1024px) {
-  .brand--title {
-    font-size: 2rem;
-  }
-
-  .brand--subtitle {
-    font-size: 1.4rem;
-  }
-}
-*/

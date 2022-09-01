@@ -41,9 +41,9 @@ let eventHander = function (event) {
 };
 
 function closeMenu() {
-  if ((menuOpen = true)) {
+  if (menuOpen) {
     document.addEventListener("click", eventHander);
-  } else if ((menuOpen = false)) {
+  } else if (!menuOpen) {
     document.removeEventListener("click", eventHander);
     click = 0;
   }
